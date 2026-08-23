@@ -1,0 +1,16 @@
+services:
+  mongodb:
+    image: mongodb/mongodb-community-server:8.0-ubi8
+    container_name: mongo-coworking
+    restart: unless-stopped
+    ports:
+      - "27020:27017"
+# Cargando las variables de entorno desde el archivo .env
+    env_file:
+      - .env
+
+    volumes:
+      - mongo_data:/data/db
+
+volumes:
+  mongo_data:
