@@ -1,0 +1,24 @@
+use("coworking_db");
+
+db.departamentos.insertMany([
+    {
+        nombre: "Ventas",
+        descripcion: "Departamento encargado de las ventas y relaciones con los clientes."
+    },
+    {
+        nombre: "Tecnología",
+        descripcion: "Departamento encargado del desarrollo y mantenimiento de sistemas."
+    },
+    {
+        nombre: "Recursos Humanos",
+        descripcion: "Departamento encargado de la gestión y bienestar de los empleados."
+    },
+    {
+        nombre: "Finanzas",
+        descripcion: "Departamento encargado de administrar los recursos económicos de la empresa."
+    },
+    {
+        nombre: "Marketing",
+        descripcion: "Departamento encargado de la publicidad y promoción de los productos."
+    }
+])

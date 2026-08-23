@@ -1,0 +1,44 @@
+use("coworking_db");
+
+db.usuarios.insertMany([
+    {
+        nombre: "Ana",
+        apellido: "López",
+        email: "ana.lopez@example.com",
+        telefono: "555-1234",
+        departamentoId: ObjectId("6a8b69165717559d695ab2e2"),
+        puestoId: ObjectId("6a8b6a2f0268f7bd67ffa3e6")
+    },
+    {
+        nombre: "Carlos",
+        apellido: "Martínez",
+        email: "carlos.martinez@example.com",
+        telefono: "555-2345",
+        departamentoId: ObjectId("6a8b69165717559d695ab2e3"),
+        puestoId: ObjectId("6a8b6a2f0268f7bd67ffa3e7")
+    },
+    {
+        nombre: "María",
+        apellido: "García",
+        email: "maria.garcia@example.com",
+        telefono: "555-3456",
+        departamentoId: ObjectId("6a8b69165717559d695ab2e4"),
+        puestoId: ObjectId("6a8b6a2f0268f7bd67ffa3e8")
+    },
+    {
+        nombre: "José",
+        apellido: "Hernández",
+        email: "jose.hernandez@example.com",
+        telefono: "555-4567",
+        departamentoId: ObjectId("6a8b69165717559d695ab2e5"),
+        puestoId: ObjectId("6a8b6a2f0268f7bd67ffa3e9")
+    },
+    {
+        nombre: "Laura",
+        apellido: "Ramírez",
+        email: "laura.ramirez@example.com",
+        telefono: "555-5678",
+        departamentoId: ObjectId("6a8b69165717559d695ab2e6"),
+        puestoId: ObjectId("6a8b6a2f0268f7bd67ffa3ea")
+    },
+])

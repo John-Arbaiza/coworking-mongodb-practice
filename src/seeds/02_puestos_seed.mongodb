@@ -1,0 +1,52 @@
+use("coworking_db");
+
+db.puestos.insertMany([
+    {
+        nombre: "Gerente",
+        descripcion: "Encargado de dirigir y supervisar las actividades del departamento o empresa."
+    },
+    {
+        nombre: "Desarrollador",
+        descripcion: "Responsable de diseñar, desarrollar y mantener aplicaciones y sistemas informáticos."
+    },
+    {
+        nombre: "Analista de RRHH",
+        descripcion: "Encargado de apoyar en la gestión del personal, contratación y administración de empleados."
+    },
+    {
+        nombre: "Contador",
+        descripcion: "Responsable de registrar, analizar y controlar las operaciones financieras de la empresa."
+    },
+    {
+        nombre: "Vendedor",
+        descripcion: "Encargado de ofrecer productos o servicios y atender las necesidades de los clientes."
+    },
+    {
+        nombre: "Diseñador Gráfico",
+        descripcion: "Responsable de crear contenido visual para publicidad, redes sociales y materiales de la empresa."
+    },
+    {
+        nombre: "Administrador",
+        descripcion: "Encargado de coordinar procesos administrativos y apoyar en la organización de la empresa."
+    },
+    {
+        nombre: "Soporte Técnico",
+        descripcion: "Responsable de brindar asistencia y solucionar problemas relacionados con equipos y sistemas."
+    },
+    {
+        nombre: "Coordinador de Marketing",
+        descripcion: "Encargado de planificar y coordinar campañas de marketing y estrategias de promoción."
+    },
+    {
+        nombre: "Asistente Administrativo",
+        descripcion: "Apoya en tareas administrativas, organización de documentos y gestión de información."
+    },
+    {
+        nombre: "Supervisor",
+        descripcion: "Encargado de supervisar las actividades del personal y verificar el cumplimiento de objetivos."
+    },
+    {
+        nombre: "Recepcionista",
+        descripcion: "Responsable de atender a visitantes, clientes y llamadas, además de gestionar información básica."
+    }
+])
