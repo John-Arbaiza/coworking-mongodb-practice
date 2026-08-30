@@ -2,50 +2,62 @@ use("coworking_db");
 
 db.puestos.insertMany([
     {
+        _id:ObjectId("6bbbbbbbbbbbbbbbbbbbbb01"),
         nombre: "Gerente",
         descripcion: "Encargado de dirigir y supervisar las actividades del departamento o empresa."
     },
     {
+        _id:ObjectId("6bbbbbbbbbbbbbbbbbbbbb02"),
         nombre: "Desarrollador",
         descripcion: "Responsable de diseñar, desarrollar y mantener aplicaciones y sistemas informáticos."
     },
     {
+        _id:ObjectId("6bbbbbbbbbbbbbbbbbbbbb03"),
         nombre: "Analista de RRHH",
         descripcion: "Encargado de apoyar en la gestión del personal, contratación y administración de empleados."
     },
     {
+        _id:ObjectId("6bbbbbbbbbbbbbbbbbbbbb04"),
         nombre: "Contador",
         descripcion: "Responsable de registrar, analizar y controlar las operaciones financieras de la empresa."
     },
     {
+        _id:ObjectId("6bbbbbbbbbbbbbbbbbbbbb05"),
         nombre: "Vendedor",
         descripcion: "Encargado de ofrecer productos o servicios y atender las necesidades de los clientes."
     },
     {
+        _id:ObjectId("6bbbbbbbbbbbbbbbbbbbbb06"),
         nombre: "Diseñador Gráfico",
         descripcion: "Responsable de crear contenido visual para publicidad, redes sociales y materiales de la empresa."
     },
     {
+        _id:ObjectId("6bbbbbbbbbbbbbbbbbbbbb07"),
         nombre: "Administrador",
         descripcion: "Encargado de coordinar procesos administrativos y apoyar en la organización de la empresa."
     },
     {
+        _id:ObjectId("6bbbbbbbbbbbbbbbbbbbbb08"),
         nombre: "Soporte Técnico",
         descripcion: "Responsable de brindar asistencia y solucionar problemas relacionados con equipos y sistemas."
     },
     {
+        _id:ObjectId("6bbbbbbbbbbbbbbbbbbbbb09"),
         nombre: "Coordinador de Marketing",
         descripcion: "Encargado de planificar y coordinar campañas de marketing y estrategias de promoción."
     },
     {
+        _id:ObjectId("6bbbbbbbbbbbbbbbbbbbbb10"),
         nombre: "Asistente Administrativo",
         descripcion: "Apoya en tareas administrativas, organización de documentos y gestión de información."
     },
     {
+        _id:ObjectId("6bbbbbbbbbbbbbbbbbbbbb11"),
         nombre: "Supervisor",
         descripcion: "Encargado de supervisar las actividades del personal y verificar el cumplimiento de objetivos."
     },
     {
+        _id:ObjectId("6bbbbbbbbbbbbbbbbbbbbb12"),
         nombre: "Recepcionista",
         descripcion: "Responsable de atender a visitantes, clientes y llamadas, además de gestionar información básica."
     }
