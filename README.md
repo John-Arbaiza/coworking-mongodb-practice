@@ -31,6 +31,13 @@ Este repositorio tiene un propósito diferente.
 
 Cada carpeta dentro de src/ representa un concepto de MongoDB, siguiendo aproximadamente el orden en el que se aprende.
 
+## 📚 Ruta de aprendizaje
+|Módulo|Conceptos principales|Estado|
+|---|---|---|
+|`01-fundamentos`|CRUD, documentos, BSON|✅ Completo|
+|`02-modelado`|Embebido vs. referencias, `_id`, integridad referencial|✅ Completo|
+
+
 ## 🚀 Cómo ejecutar el proyecto
 
 ### Requisitos
@@ -55,6 +62,27 @@ docker compose up -d
 ```
 
 Esto iniciará la instancia de MongoDB definida en `docker-compose.yml`.
+
+### 3. Ejecutar los ejercicios
+
+Los ejercicios y ejemplos se encuentran dentro de `src/`.
+
+Los archivos `.mongodb` están pensados para ejecutarse utilizando **MongoDB for VS Code**
+
+## 🗂️ Estructura del proyecto
+
+```text
+.
+├── src/
+│   ├── 01-fundamentos/
+│   ├── 02-modelado/
+│
+├── .env.example
+├── docker-compose.yml
+└── README.md
+```
+
+La estructura puede cambiar a medida que avance el aprendizaje.
 
 ## 🛠️ Stack
 

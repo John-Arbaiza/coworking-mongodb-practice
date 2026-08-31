@@ -1,0 +1,25 @@
+use("coworking_db");
+
+// Antes de eliminar, SIEMPRE comprobamos qué documento vamos a borrar utilizando findOne().
+db.espacios.findOne({
+    nombre: "Cabina 01"
+});
+
+// deleteOne() elimina UN SOLO documento que coincida con el filtro.
+// Si existen varios documentos con ese mismo nombre, deleteOne() solamente eliminará el primero que encuentre.
+db.espacios.deleteOne({
+    nombre: "Cabina 01"
+});
+
+// comprobamos qué documentos coinciden con el filtro
+db.espacios.find({
+    tipo: "Sala de reuniones"
+});
+
+// deleteMany() elimina TODOS los documentos que coincidan con el filtro.
+db.espacios.deleteMany({
+    tipo: "Sala de reuniones"
+});
+
+// Comprobamos el estado final
+db.espacios.find();

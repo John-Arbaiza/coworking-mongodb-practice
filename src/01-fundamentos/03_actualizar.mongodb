@@ -1,0 +1,27 @@
+use("coworking_db");
+
+// updateOne() modifica UN SOLO documento que coincida con el filtro.
+db.espacios.updateOne(
+    { nombre: "Sala B" },
+    {
+        $set: { disponible: true }
+    }
+);
+
+// Confirmando el cambio 
+db.espacios.findOne({
+    nombre: "Sala B"
+});
+
+// updateMany() permite modificar VARIOS documentos que cumplan con el filtro.
+db.espacios.updateMany(
+    {  tipo: "Sala de reuniones" },
+    {
+        $addToSet: { equipamiento: "wifi" }
+    }
+);
+
+// Confirmando el cambio
+db.espacios.find({
+    tipo: "Sala de reuniones"
+});

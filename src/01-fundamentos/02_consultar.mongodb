@@ -1,0 +1,25 @@
+use("coworking_db");
+
+// find() sin argumentos 
+// → devuelve todos los documentos que cumplen el filtro.
+db.espacios.find();
+
+// find({ campo: valor })
+// → devuelve los documentos que coinciden exactamente con ese campo y valor.
+db.espacios.find({tipo: "Cabina telefónica"});
+
+// findOne({ campo: valor })
+// → devuelve un único documento que coincida.
+db.espacios.findOne({
+    nombre: "Sala C"
+});
+
+// find({}, { campo: 1 })
+// → permite seleccionar qué campos queremos mostrar mediante una proyección.
+db.espacios.find(
+    {},
+    {
+        nombre: 1,
+        capacidad: 1
+    }
+);

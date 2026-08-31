@@ -1,0 +1,44 @@
+// Selecciona la base de datos donde vamos a trabajar.
+// Si la base de datos no existe, MongoDB la creará cuando insertemos datos.
+use("coworking_db");
+
+// insertOne() permite insertar un único documento en la colección.
+db.espacios.insertOne({
+    nombre: "Sala A",
+    tipo: "Sala de reuniones",
+    capacidad: 6,
+    disponible: true,
+    equipamiento: ["proyector", "pizarra", "Wifi"]
+});
+
+// insertMany() permite insertar varios documentos en una sola operación.
+db.espacios.insertMany([
+    {
+        nombre: "Auditorio Central",
+        tipo: "Sala de eventos",
+        capacidad: 50,
+        disponible: true,
+        equipamiento: ["proyector", "sonido", "wifi", "micrófono"]
+    },
+    {
+        nombre: "Sala B",
+        tipo: "Sala de reuniones",
+        capacidad: 10,
+        disponible: false,
+        equipamiento: ["proyector", "pizarra", "videoconferencia"]
+    },
+    {
+        nombre: "Cabina 01",
+        tipo: "Cabina telefónica",
+        capacidad: 1,
+        disponible: true,
+        equipamiento: ["wifi", "enchufe"]
+    },
+    {
+        nombre: "Sala C",
+        tipo: "Sala de reuniones",
+        capacidad: 8,
+        disponible: false,
+        equipamiento: ["proyector", "pizarra", "videoconferencia"]
+    }
+])
